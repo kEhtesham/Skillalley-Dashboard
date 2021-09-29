@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skillalley</title>
+    <link rel="icon" href="Images/favicon.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main_element">
+        <div class="navbar_tab">
+            <div class="logo">
+                <img src="Images/Logo.svg" alt="Logo">
+            </div>
+            <div class="tabs">
+                <button onclick="openCity('Dashboard')" class="active">
+                    <img src="Images/Dashboard.svg" alt="Dashboard">
+                    Dashboard
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <button onclick="openCity('Classes')">
+                    <img src="Images/Classes.svg" alt="Dashboard">
+                    Classes
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <button onclick="openCity('Courses')">
+                    <img src="Images/Courses.svg" alt="Dashboard">
+                    Courses
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <button onclick="openCity('Earnings')">
+                    <img src="Images/Earning.svg" alt="Dashboard">
+                    Earnings
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <button onclick="openCity('Statements')">
+                    <img src="Images/Statements.svg" alt="Dashboard">
+                    Statements
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <div class="lable">Insights</div>
+                <button onclick="openCity('Messages')">
+                    <img src="Images/Messages.svg" alt="Dashboard">
+                    Messages
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <button onclick="openCity('Activities')">
+                    <img src="Images/Activities.svg" alt="Dashboard">
+                    Activities
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <div class="card_wrap">
+                    <img src="Images/3D elem 2.png" alt="">
+                    <a href="http://" target="_blank">Go Pro Now<i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="tab_content">
+
+            <div id="Dashboard" class="city">
+                <div class="dashboard_main_cont">
+                    <div class="city_content">
+                        <h2>Get Thousands Premium Courses.</h2>
+                        <p>Upgrade to watch, play, learn, make, and discover.🔥</p>
+                        <button> Upgrade Now <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                    <div class="city_image">
+                        <img src="Images/Skillalley.png" alt="Skillalley">
+                    </div>
+                </div>
+                <div class="sceduled_data">
+                    <select name="Date" id="date" onchange="getsceFunction(event, value)">
+                        <option value="29">Monday 29 Aug</option>
+                        <option value="30">Monday 30 Aug</option>
+                        <option value="31">Monday 31 Aug</option>
+                    </select>
+                    <div class="view_scedule">
+                        <div class="timesheet">
+                            <input type="range" id='changeRange' min="1" max="13" value="10" onchange="getrangeFunction()">
+                            <div class="timing">
+                                <div class="time">08.00</div>
+                                <div class="time">-</div>
+                                <div class="time">-</div>
+                                <div class="time">-</div>
+                                <div class="time">09.00</div>
+                                <div class="time">-</div>
+                                <div class="time">-</div>
+                                <div class="time">-</div>
+                                <div class="time">10.00</div>
+                                <div class="time">-</div>
+                                <div class="time">-</div>
+                                <div class="time">-</div>
+                                <div class="time">11.00</div>
+                            </div>
+                        </div>
+                        <div id="29" class="tabcontents" style="display: block;">
+                            <div class="absolute_active"></div>
+                            <div class="content_wrap active">
+                                <div class="scedule_image">
+                                    <img src="Images/3D BT.png" alt="">
+                                </div>
+                                <div class="scedule_content">
+                                    <div class="timing_data">
+                                        <div class="total_time">
+                                            <i class="far fa-clock"></i>08.00 - 09.00
+                                        </div>
+                                        <div class="time_left_wrap">
+                                            <div class="time_inner_wrap">
+                                                <div class="time_left">75</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="scedule_title">
+                                        Business thinking for Designers
+                                    </div>
+                                    <div class="scedule_disc">
+                                        Bring a Business mind to design, Transform your career.
+                                        <i class="fas fa-arrow-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content_wrap short_scedule">
+                                
+                                <div class="scedule_content">
+                                    <div class="timing_data">
+                                        <div class="total_time">
+                                            <i class="far fa-clock"></i>08.00 - 09.00
+                                        </div>
+                                        <div class="short_scedule_title">Design team Meeting</div>
+                                        <div class="emoji_representation">😎</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content_wrap active soon_active">
+                                <div class="scedule_image">
+                                    <img src="Images/3D elem 1.png" alt="">
+                                </div>
+                                <div class="scedule_content">
+                                    <div class="timing_data">
+                                        <div class="total_time">
+                                            <i class="far fa-clock"></i>08.00 - 09.00
+                                        </div>
+                                        <div class="time_left_wrap">
+                                            <div class="time_inner_wrap">
+                                                <div class="time_left">85</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="scedule_title">
+                                        Business thinking for Designers
+                                    </div>
+                                    <div class="scedule_disc">
+                                        Bring a Business mind to design, Transform your career.
+                                        <i class="fas fa-arrow-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="30" class="tabcontents">
+                        <h3>demotest2</h3>
+                        </div>
+                        
+                        <div id="31" class="tabcontents">
+                        <h3>demotest3</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="Classes" class="city" style="display:none">
+                <h2>Classes</h2>
+                <p>Classes content</p>
+            </div>
+            
+            <div id="Courses" class="city" style="display:none">
+                <h2>Courses</h2>
+                <p>Courses content</p>
+            </div>
+            
+            <div id="Earnings" class="city" style="display:none">
+                <h2>Earnings</h2>
+                <p>Earnings Content</p>
+            </div>
+            
+            <div id="Statements" class="city" style="display:none">
+                <h2>Statements</h2>
+                <p>Statements content</p> 
+            </div>
+            
+            <div id="Messages" class="city" style="display:none">
+                <h2>Messages</h2>
+                <p>Messages content</p>
+            </div>
+
+            <div id="Activities" class="city" style="display:none">
+                <h2>Activities</h2>
+                <p>Activities content</p>
+            </div>
+
+        </div>
+        <div class="addtional_details">
+            <a href="https://meet.google.com/phj-vbpk-pjz" target="_blank" rel="Google Meet">Dynamic Google Meet</a>
+        </div>
+    </div>
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+
+// Add remove cclass as of now 
+
+$( document ).ready(function() {
+  $('.tabs button').click(function() {
+      $('.tabs button').removeClass('active');
+      $(this).addClass('active');
+  });
+});
+
+</script>
+
+<script>
+$( document ).ready(function() {
+    $('select#date option').split
+});
+</script>
+</body>
+</html>
